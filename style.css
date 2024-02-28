@@ -18,10 +18,15 @@
     padding: 0;
 }
 
+.midnav {
+    margin: auto;
+}
+
 /* images */
 
 img {
-    width: 25rem;
+    width: 70%;
+    height: auto;
     border-radius: 30px;
 }
 
@@ -30,7 +35,8 @@ img {
 }
 
 .register {
-    background-color: #f0f0f2 !important;
+    background-color: #96c67f !important;
+    color: white !important;
 }
 
 .login {
@@ -47,6 +53,7 @@ img {
     align-items: center;
     background-color: #F4F6F6;
     border-radius: 15px;
+    margin-top: 150px;
 }
 
 .lorem {
@@ -135,47 +142,10 @@ img {
     margin-bottom: 0.5rem;
 }
 
-/* Troisième div: Conseiller */
-.contact {
-    margin-top: 10%;
-    display: flex;
-    justify-content: center;
-}
-
-.backgroundconseiller {
-    width: 25%;
-    height: 800px !important;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #96c67f;
-    border-radius: 30px;
-}
-
-.conseiller1 {
-    margin-bottom: 70%;
-    margin-left: 15%;
-}
-
-.conseiller2 {
-    position: absolute;
-    margin-left: -20%;
-}
-
-.lorem-conseiller {
-    margin-left: 10%;
-    margin-right: 10%;
-    ;
-    margin-top: 7%;
-    width: 25%;
-    font-family: var(--text);
-    font-weight: bold;
-}
-
 /* deuxième section: services */
 
 .services {
-    margin: 5rem 14rem;
+    margin-top: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,13 +172,14 @@ img {
 }
 
 .green {
-    margin-top: 10rem;
+    min-height: 300px;
+    margin-top: 20rem;
     background-color: #96c67f;
-    padding: 3rem 0.5rem 0.5rem;
     border-radius: 20px;
 }
 
 .white {
+    min-height: 300px;
     padding: 3rem 0.5rem 0.5rem;
     border-radius: 20px;
 }
@@ -232,10 +203,55 @@ img {
     margin-bottom: 20rem;
 }
 
+h2 {
+    margin-top: 25px;
+}
+
+/* Troisième div: Conseiller */
+.contact {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.backgroundconseiller {
+    width: 25%;
+    height: 600px !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #96c67f;
+    border-radius: 30px;
+}
+
+.conseiller1 {
+    margin-top: -60%;
+    margin-left: 15%;
+}
+
+.conseiller2 {
+    width: 20%;
+    position: absolute;
+    margin-left: -20%;
+}
+
+.lorem-conseiller {
+    margin-left: 10%;
+    margin-right: 10%;
+    ;
+    margin-top: 7%;
+    width: 25%;
+    font-family: var(--text);
+    font-weight: bold;
+}
+
+
+
 /* 4ème section */
 
 .contributors {
     margin: 5rem 14rem;
+    margin-top: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -271,13 +287,7 @@ img {
     margin-top: 3rem;
 }
 
-.carousel-directions svg {
-    width: 20px;
-    border: solid 1px rgb(150, 198, 127);
-    padding: 1rem 1.4rem;
-    border-radius: 50%;
-    margin: 0 1.5rem;
-}
+
 
 .title span {
     color: #96c67f;
@@ -306,10 +316,19 @@ h3.title-green {
     margin-top: 150px;
 }
 
-@media screen and (max-width: 450px) {
+.text-reset {
+    color: #96c67f;
+}
+
+@media screen and (max-width: 1400px) {
     .news {
         flex-direction: column;
         margin: 1rem;
+        margin-top: 5%;
+        display: flex;
+        justify-content: center !important;
+        text-align: center;
+        padding-top: 5%;
     }
 
     .lorem {
@@ -360,5 +379,57 @@ h3.title-green {
         padding: 0rem 0.7rem;
         background-color: rgba(58, 141, 74, 0.2);
         border-radius: 50%;
+    }
+
+    .services {
+        width: 100uw;
+        height: auto;
+    }
+
+    .white {
+        height: auto;
+    }
+
+    .green {
+        height: auto;
+    }
+
+    .container-green {
+        display: none;
+    }
+
+    .container-white {
+        display: none;
+    }
+
+    /* 3ème section */
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .backgroundconseiller {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lorem-conseiller {
+        width: 60%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* 4ème section */
+
+    .contributors {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        width: 100%;
+        margin-bottom: 15%;
     }
 }
