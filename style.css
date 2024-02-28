@@ -25,16 +25,32 @@ img {
     border-radius: 30px;
 }
 
+.image {
+    margin-right: 5%;
+}
+
+.register {
+    background-color: #f0f0f2 !important;
+}
+
+.login {
+    color: #96c67f !important;
+}
+
 /* Première div: News */
 
 .news {
-    margin: 5rem 14rem;
+    height: 350px !important;
+    margin: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #F4F6F6;
+    border-radius: 15px;
 }
 
 .lorem {
+    width: 100% !important;
     margin: 4rem;
 }
 
@@ -148,6 +164,8 @@ img {
 
 .lorem-conseiller {
     margin-left: 10%;
+    margin-right: 10%;
+    ;
     margin-top: 7%;
     width: 25%;
     font-family: var(--text);
@@ -212,6 +230,75 @@ img {
 .services div svg {
     width: 80px;
     margin-bottom: 20rem;
+}
+
+/* 4ème section */
+
+.contributors {
+    margin: 5rem 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profil {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 1.5rem;
+}
+
+.profil img {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.profil h3 {
+    font-family: var(--title);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.title {
+    font-family: var(--title);
+    font-size: 2rem;
+    width: 110rem;
+}
+
+.carousel-directions {
+    margin-top: 3rem;
+}
+
+.carousel-directions svg {
+    width: 20px;
+    border: solid 1px rgb(150, 198, 127);
+    padding: 1rem 1.4rem;
+    border-radius: 50%;
+    margin: 0 1.5rem;
+}
+
+.title span {
+    color: #96c67f;
+    text-decoration: underline;
+}
+
+h3.title-green {
+    color: #96c67f;
+    font-weight: 200;
+}
+
+.equip {
+    margin: 0 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.equip p {
+    font-family: var(--text);
 }
 
 /* Footer */
