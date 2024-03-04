@@ -26,5 +26,9 @@ J'ai suivi la maquette. La proposition intuitive serait d'ajouter un "réel" car
 ## Footer 
 Amélioration à apporter: modifier la couleur du bouton subscribe.
 
+## Derniers changements
+Durant le week-end, j'ai profité de mon temps libre afin d'optimiser certaines choses que je n'appréciais dans le rendu de la page.
+J'espère que ces changements vous plairont.
+
 # Remerciements
 Je tiens à vous remercier d'avoir pris le temps d'étudier ma candidature et ce repository.
