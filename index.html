@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Lorem Ipsum</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -50,37 +50,53 @@
         </div>
     </nav>
     <main>
-        <section class="news">
-            <div class="lorem">
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque iusto alias laborum pariatur libero
-                    error obcaecati enim, fugiat corporis delectus consequatur eveniet. Odit rerum animi perspiciatis
-                    quam accusamus esse soluta.</p>
-            </div>
-            <div class="image">
-                <img src="https://www.journallenord.com/wp-content/uploads/2020/02/Une-dame-de-coeur_janie_lamontagne.jpg"
-                    alt="image dame">
-                <div class="card-profils">
-                    <p>Learn from best
-                        <span>
-                            instructors
-                        </span>
-                        around the globe
-                    </p>
-                    <img src="" alt="">
+
+        <div class="container-news">
+            <div class="background-news">News</div>
+
+            <section class="news">
+
+                <div class="lorem">
+                    <h1>Lorem Ipsum</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque iusto alias laborum pariatur
+                        libero
+                        error obcaecati enim, fugiat corporis delectus consequatur eveniet. Odit rerum animi
+                        perspiciatis
+                        quam accusamus esse soluta.</p>
                 </div>
-                <div class="card-followers">
-                    <div class="round">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <path fill="#3a8d4a"
-                                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
-                        </svg>
+                <div class="image">
+                    <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="image dame" class="image-news">
+                    <div class="card-profils">
+                        <p class="fw-bolder">Learn from best
+                            <span class="fw-bolder">
+                                instructors
+                            </span>
+                            around the globe
+                        </p>
+                        <div class="container-user-image">
+
+                            <img src="user.jpg" alt="" class="image-user">
+                            <img src="user.jpg" alt="" class="image-user">
+                            <img src="user.jpg" alt="" class="image-user">
+                            <img src="user.jpg" alt="" class="image-user">
+                            <img src="user.jpg" alt="" class="image-user">
+                        </div>
+
                     </div>
-                    <h2>15k</h2>
-                    <p>Amazing students around the globe</p>
+                    <div class="card-followers">
+                        <div class="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="#3a8d4a"
+                                    d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+                            </svg>
+                        </div>
+                        <h2>15k</h2>
+                        <p>Amazing students around the globe</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <section class="services">
             <div class="white">
@@ -91,7 +107,7 @@
                     24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123
                     35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z" />
                 </svg>
-                <h2>Lorem, ipsum</h2>
+                <h2 class="fw-bolder">Lorem, ipsum</h2>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, dignissimos et. Laborum, officia
                     quos ipsa laboriosam rem provident culpa sint incidunt
@@ -99,11 +115,11 @@
             </div>
             <div class="green">
                 <svg class='container-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path fill="#3a8d4a" d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53
+                    <path fill="#96c67f" d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53
                     43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1
                     112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
                 </svg>
-                <h2>Lorem, ipsum</h2>
+                <h2 class="fw-bolder">Lorem, ipsum</h2>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, dignissimos et. Laborum, officia
                     quos ipsa laboriosam rem provident culpa sint incidunt
@@ -118,7 +134,7 @@
                     163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1
                     112-112 112z" />
                 </svg>
-                <h2>Lorem, ipsum</h2>
+                <h2 class="fw-bolder">Lorem, ipsum</h2>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, dignissimos et. Laborum, officia
                     quos ipsa laboriosam rem provident culpa sint incidunt
@@ -126,11 +142,11 @@
             </div>
             <div class="green">
                 <svg class='container-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path fill="#3a8d4a"
+                    <path fill="#96c67f"
                         d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z" />
                 </svg>
 
-                <h2>Lorem, ipsum</h2>
+                <h2 class="fw-bolder">Lorem, ipsum</h2>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, dignissimos et. Laborum, officia
                     quos ipsa laboriosam rem provident culpa sint incidunt
@@ -140,17 +156,14 @@
 
         <section class="contact">
             <div class="backgroundconseiller">
-                <div class="conseiller1">
-                    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="image dame">
-                </div>
-                <div class="conseiller2">
-                    <img src="https://plus.unsplash.com/premium_photo-1672691612717-954cdfaaa8c5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="image dame">
-                </div>
+                <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="image dame" class="conseiller1">
+                <img src="https://plus.unsplash.com/premium_photo-1672691612717-954cdfaaa8c5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="image dame" class="conseiller2">
+
             </div>
             <div class="lorem-conseiller">
-                <h1 class="text-uppercase">Lorem Ipsum</h1>
+                <h1 class="lorem-titre text-uppercase">Lorem Ipsum</h1>
                 <h2>Lorem Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at posuere libero.
                     Suspendisse sit amet erat non nisl dignissim faucibus id ut augue.
@@ -162,7 +175,7 @@
         </section>
         <section class="contributors">
             <div class="title">
-                <h1>What Our <span>Students</span> Say About Us</h1>
+                <h1 class="fw-bolder">What Our <span class="fw-bolder">Students</span> Say About Us</h1>
                 <div class="carousel-directions">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#96c67f"
                         class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
@@ -182,7 +195,7 @@
                     <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="développeur">
                     <div>
-                        <h3>Mohh Jumah</h3>
+                        <h3 class="fw-bolder">Mohh Jumah</h3>
                         <h3 class="title-green">Senior Developper</h3>
                     </div>
                 </div>
@@ -195,21 +208,8 @@
                     <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="développeur">
                     <div>
-                        <h3>Mohh Jumah</h3>
+                        <h3 class="fw-bolder">John Mark</h3>
                         <h3 class="title-green">Senior Developper</h3>
-                    </div>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam distinctio repellat, reprehenderit
-                    debitis placeat quos esse dolore assumenda beatae nihil fuga inventore? Repellat ex, natus quos
-                    fuga, quis</p>
-            </div>
-            <div class="equip">
-                <div class="profil">
-                    <img src="https://images.unsplash.com/photo-1581803118522-7b72a50f7e9f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="data analyste">
-                    <div>
-                        <h3>John Mark</h3>
-                        <h3 class="title-green">Data Analyst</h3>
                     </div>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam distinctio repellat, reprehenderit
@@ -293,7 +293,7 @@
                         <a href="#!" class="text-reset">Email</a>
                     </p>
                 </div>
-                <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4">
+                <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4 hidden-on-mobile">
                     <p>
                         <a href="#!" class="text-reset">Job Opening</a>
                     </p>
@@ -304,7 +304,7 @@
                         <a href="#!" class="text-reset">Research</a>
                     </p>
                 </div>
-                <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4">
+                <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4 hidden-on-mobile">
                     <p>
                         <a href="#!" class="text-reset">UK Privacy Policy</a>
                     </p>
@@ -315,16 +315,16 @@
             </div>
         </div>
         <div class="text-center p-4 container text-center text-bg-dark p-3" style="background-color:black;">
-            <p>Subscribe to get latest updates</p>
+            <p class="footer-subscribetext">Subscribe to get latest updates</p>
             <form role="subscribe">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="input-group mb-3 col-lg-6 col-md-6 col-xl-6 subscribe-footer">
-                            <input type="text" class="form-control" placeholder="Your Email Address"
-                                aria-label="Your Email Address" aria-describedby="basic-addon2">
+                            <input type="text" class="form-control rounded-0 text-searchbar"
+                                placeholder="Your Email Address" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <a href="#" class="text-reset"><span
-                                        class="input-group-text bg-success text-reset">Subscribe</span></a>
+                                        class="input-group-text text-reset  button-footer rounded-0">Subscribe</span></a>
                             </div>
                         </div>
                     </div>

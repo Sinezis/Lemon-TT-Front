@@ -18,8 +18,26 @@
     padding: 0;
 }
 
+body {
+
+    max-width: 1400px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Navbar */
+
 .midnav {
     margin: auto;
+}
+
+.register {
+    background-color: #96c67f !important;
+    color: white !important;
+}
+
+.login {
+    color: #96c67f !important;
 }
 
 /* images */
@@ -34,26 +52,32 @@ img {
     margin-right: 5%;
 }
 
-.register {
-    background-color: #96c67f !important;
-    color: white !important;
-}
-
-.login {
-    color: #96c67f !important;
-}
-
 /* Première div: News */
 
 .news {
     height: 350px !important;
-    margin: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #F4F6F6;
     border-radius: 15px;
+}
+
+.background-news {
+
+    color: #F4F6F6;
+    font-size: 120px;
+    position: absolute;
+    margin-top: -122px;
+    margin-left: 33px;
+    font-weight: bold;
+}
+
+.container-news {
+
     margin-top: 150px;
+    position: relative;
+
 }
 
 .lorem {
@@ -70,6 +94,7 @@ img {
 .lorem h1 {
     font-family: var(--title);
     font-size: 4rem;
+    font-weight: bolder;
 }
 
 .lorem * {
@@ -84,12 +109,19 @@ img {
     flex-direction: column;
     width: 15rem;
     text-align: center;
-    padding: 1rem 1rem 5rem 1rem;
+    padding: 1.8rem;
     border-radius: 20px;
     font-size: 1.2rem;
     background-color: white;
-    box-shadow: -5px -5px 10px rgba(115, 134, 113, 0.5);
-    margin: -15rem -10rem;
+    box-shadow: 0px 0px 50px rgba(115, 134, 113, 0.2);
+    bottom: -15px;
+    margin-left: -150px;
+}
+
+.image-news {
+
+    height: 550px;
+    width: 400px;
 }
 
 .card-profils p {
@@ -98,8 +130,27 @@ img {
 }
 
 .card-profils span {
-    color: #3a8d4a;
-    font-weight: 400;
+    color: #96c67f;
+    font-weight: bold;
+}
+
+.container-user-image {
+
+    display: flex;
+}
+
+.image-user {
+
+    width: 55px;
+    margin-left: -20px;
+    border-radius: 50px;
+    border: 8px solid white;
+
+}
+
+.container-user-image .image-user:first-child {
+
+    margin-left: 0px;
 }
 
 .card-followers {
@@ -109,17 +160,19 @@ img {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    width: 7rem;
-    padding: 0.5rem 0.2rem;
+    width: 10rem;
+    padding: 20px 20px;
     border-radius: 20px;
     background-color: white;
     box-shadow: 5px 5px 10px rgba(115, 134, 113, 0.5);
-    margin: -10.5rem 19rem;
+    /* margin: -10.5rem 19rem; */
+    margin-top: -201px;
+    margin-left: 279px;
 }
 
 .round {
     padding: 0.1rem 0.9rem;
-    background-color: rgba(58, 141, 74, 0.2);
+    background-color: #e4f9db;
     border-radius: 50%;
 }
 
@@ -129,13 +182,15 @@ img {
 }
 
 .card-followers h2 {
-    color: #3a8d4a;
+    color: #96c67f;
     font-family: var(--text);
+    font-weight: bold;
 }
 
 .card-followers p {
     font-family: var(--text);
     font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .card-followers * {
@@ -179,6 +234,7 @@ img {
 }
 
 .white {
+    background-color: #F4F6F6;
     min-height: 300px;
     padding: 3rem 0.5rem 0.5rem;
     border-radius: 20px;
@@ -215,42 +271,47 @@ h2 {
 }
 
 .backgroundconseiller {
-    width: 25%;
-    height: 600px !important;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    width: 500px;
+    height: 580px !important;
     background-color: #96c67f;
     border-radius: 30px;
+    position: relative;
 }
 
 .conseiller1 {
-    margin-top: -60%;
-    margin-left: 15%;
+    width: 60%;
+    position: absolute;
+    margin-top: 100px;
+    height: 400px;
+    margin-left: -80px;
+    z-index: 2;
 }
 
 .conseiller2 {
-    width: 20%;
+    width: 60%;
     position: absolute;
-    margin-left: -20%;
+    margin-top: -80px;
+    height: 400px;
+    margin-left: 150px;
+    z-index: 1;
 }
 
 .lorem-conseiller {
     margin-left: 10%;
     margin-right: 10%;
-    ;
     margin-top: 7%;
-    width: 25%;
+    width: 45%;
     font-family: var(--text);
-    font-weight: bold;
 }
 
-
+.lorem-titre {
+    font-weight: bolder;
+}
 
 /* 4ème section */
 
 .contributors {
-    margin: 5rem 14rem;
+
     margin-top: 8%;
     display: flex;
     justify-content: center;
@@ -300,11 +361,13 @@ h3.title-green {
 }
 
 .equip {
-    margin: 0 5rem;
+    margin: 0 3rem;
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
+    background-color: #F4F6F6;
+    padding: 3% 5% 1% 3%;
 }
 
 .equip p {
@@ -318,17 +381,53 @@ h3.title-green {
 
 .text-reset {
     color: #96c67f;
+    text-decoration: none;
 }
 
+.subscribe-footer {
+    width: 50% !important;
+}
+
+
+.button-footer {
+    background-color: #96c67f !important;
+    border-radius: 0;
+}
+
+.footer-subscribetext {
+    font-weight: bolder;
+}
+
+
 @media screen and (max-width: 1400px) {
+
+    .hidden-on-mobile {
+
+        display: none;
+    }
+
+    /* Première section */
+
     .news {
         flex-direction: column;
-        margin: 1rem;
-        margin-top: 5%;
+        margin-top: 12rem;
         display: flex;
         justify-content: center !important;
         text-align: center;
         padding-top: 5%;
+    }
+
+    .image-news {
+        width: 80% !important;
+        height: auto;
+    }
+
+    .card-profils {
+        font-size: 0.8rem;
+        padding: 0.4rem;
+        border-radius: 10px;
+        width: 12rem;
+        margin-left: 1rem;
     }
 
     .lorem {
@@ -348,19 +447,11 @@ h3.title-green {
         width: 15rem;
     }
 
-    .card-profils {
-        font-size: 0.8rem;
-        padding: 0.2rem 0.2rem 2rem 0.2rem;
-        border-radius: 10px;
-        width: 10rem;
-        margin: -8rem -3.5rem;
-    }
-
     .card-followers {
         padding: 0.2rem;
         border-radius: 10px;
         width: 5rem;
-        margin: -8rem 12rem;
+
     }
 
     .card-followers h2 {
@@ -381,17 +472,20 @@ h3.title-green {
         border-radius: 50%;
     }
 
+    /* 2ème section */
+
     .services {
-        width: 100uw;
-        height: auto;
+        margin-top: 30%;
     }
 
     .white {
-        height: auto;
+        padding-top: 0;
+        margin-top: 0;
     }
 
     .green {
         height: auto;
+        margin-top: 0;
     }
 
     .container-green {
@@ -409,7 +503,7 @@ h3.title-green {
     }
 
     .backgroundconseiller {
-        width: 40%;
+        width: 500px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -426,10 +520,16 @@ h3.title-green {
     .contributors {
         display: flex;
         flex-direction: column;
+
     }
 
     .title {
         width: 100%;
+        margin-left: 20%;
         margin-bottom: 15%;
+    }
+
+    .background-news {
+        display: none;
     }
 }
